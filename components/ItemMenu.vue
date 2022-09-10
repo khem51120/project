@@ -1,5 +1,5 @@
 <template>
-  <div class="background">
+  <div class="background" @click="$router.push(`/${to}`)">
     <v-icon color="white" size="60" class="pb-2">{{ icon }}</v-icon> <br />
     <b style="font-size: 18px">{{ title }}</b>
   </div>
@@ -10,6 +10,7 @@ export default {
   props: {
     icon: String,
     title: String,
+    to: String,
   },
 };
 </script>
@@ -19,6 +20,7 @@ export default {
   padding: 20px 20px;
   background-color: #3b3939;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .background b {

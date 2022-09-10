@@ -2,7 +2,9 @@
   <v-app>
     <div class="nav">
       <v-container>
-        <v-icon> mdi-home </v-icon>
+        <NuxtLink to="/">
+          <v-icon style="cursor: pointer"> mdi-home </v-icon>
+        </NuxtLink>
       </v-container>
     </div>
     <v-main>
@@ -23,11 +25,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .nav {
-    text-align: right;
-    i{
-      font-size: 40px;
-    }
-    
+.nav {
+  text-align: right;
+  i {
+    font-size: 40px;
   }
+}
 </style>
