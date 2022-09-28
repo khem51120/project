@@ -1,9 +1,9 @@
 <template>
   <v-app>
     <div class="nav">
-      <v-container>
+      <v-container v-if="this.$route.path != '/'">
         <NuxtLink to="/">
-          <v-icon style="cursor: pointer"> mdi-home </v-icon>
+          <v-icon style="cursor: pointer; color:#fff"> mdi-home </v-icon>
         </NuxtLink>
       </v-container>
     </div>

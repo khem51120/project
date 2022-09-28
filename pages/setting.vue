@@ -1,9 +1,9 @@
 <template>
   <div class="wrapper_page">
-    <h1 class="mb-10">ข้อมูลการตั้งค่า</h1>
-    <v-row v-for="(item, index) in items" :key="index" class="warpper-input">
+    <h1 class="mb-10" style="color:#fff">ข้อมูลการตั้งค่า</h1>
+    <v-row v-for="(item, index) in items" :key="index" class="warpper-input" style="color:#fff">
       <v-col cols="10" style="text-align: left">
-        <p>ชื่อรูปแบบ : มหาเพท 1</p>
+        <p>หลอดที่ : 1</p>
         <h1>10 : 30</h1>
         <p>การเปิด : ทุกวัน</p>
       </v-col>
@@ -18,7 +18,7 @@
         :loading="loading"
         :disabled="loading"
         color="primary"
-        @click="loader = 'loading'"
+        to="/setting_templatetime"
       >
         เพิ่มรูปแบบเวลา
       </v-btn>

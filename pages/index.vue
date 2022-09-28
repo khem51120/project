@@ -1,13 +1,26 @@
 <template>
   <div>
     <v-container>
-      <b><h1 class="pt-10 pb-10">หน้าแรก</h1></b>
+      <b><h1 class="pt-10 pb-10" style="color:#fff">หน้าแรก</h1></b>
       <v-row>
-        <v-col></v-col>
+        <v-col>
+          <div
+            class="background"
+            style="
+              height: 100%;
+              align-items: center;
+              display: flex;
+              justify-content: center;
+              font-size:75px;
+            "
+          >
+            <b style="color:#000">0</b>
+          </div></v-col
+        >
         <v-col>
           <item-menu
             icon="mdi-power-standby"
-            title="เปิด - ปิดไฟ"
+            title="สถานะการใช้งาน"
             to="onoff"
           ></item-menu>
         </v-col>

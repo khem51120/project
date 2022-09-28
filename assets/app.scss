@@ -1,0 +1,27 @@
+@import "./variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+body,
+html {
+  margin    : 0;
+  padding   : 0;
+  overflow-x: hidden;
+  color     : #fff !important;
+  background: #000 !important;
+
+  #app{
+    background-color: #000 !important;
+  }
+  * {
+    font-family   : 'Kanit', sans-serif;
+    font-display  : swap;
+    letter-spacing: 0.03em;
+  }
+
+}

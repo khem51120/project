@@ -1,71 +1,42 @@
 <template>
-  <div class="wrapper_page">
-    <h1>เปิด - ปิดปลั๊กไฟ</h1>
-    <v-row class="warpper-input mt-10">
-      <v-col cols="2" class="time">
-        {{ "00:00" }}
-        {{ "00:00" }}
-      </v-col>
-      <v-select :items="items" label="Solo field" solo></v-select>
-      <v-col class="wrapper-btn">
+  <v-container>
+    <div class="wrapper_page">
+      <h1 style="color: #ffffff">สถานะไฟฟ้า</h1>
+      <v-row class="warpper-input mt-10">
+        <b style="padding: 0px 20px">chanel 1</b>
         <v-btn
           elevation="2"
           fab
           :class="status ? 'btn-on' : 'btn-off'"
-          @click="status = !status"
-          ><v-icon dark> mdi-power-standby </v-icon></v-btn
+          ><v-icon dark>{{status ? 'mdi-lightbulb-on' :'mdi-lightbulb'}} </v-icon></v-btn
         >
-      </v-col>
-    </v-row>
-    <v-row class="warpper-input">
-      <v-col cols="2" class="time">
-        {{ "00:00" }}
-        {{ "00:00" }}
-      </v-col>
-      <v-select :items="items" label="Solo field" solo></v-select>
-      <v-col class="wrapper-btn">
+      </v-row>
+      <v-row class="warpper-input mt-10">
+        <b style="padding: 0px 20px">chanel 2</b>
         <v-btn
           elevation="2"
           fab
           :class="status ? 'btn-on' : 'btn-off'"
-          @click="status = !status"
-          ><v-icon dark> mdi-power-standby </v-icon></v-btn
+          ><v-icon dark>{{status ? 'mdi-lightbulb-on' :'mdi-lightbulb'}} </v-icon></v-btn
         >
-      </v-col>
-    </v-row>
-    <v-row class="warpper-input">
-      <v-col cols="2" class="time">
-        {{ "00:00" }}
-        {{ "00:00" }}
-      </v-col>
-      <v-select :items="items" label="Solo field" solo></v-select>
-      <v-col class="wrapper-btn">
+      </v-row>
+      <v-row class="warpper-input mt-10">
+        <b style="padding: 0px 20px">chanel 3</b>
         <v-btn
           elevation="2"
           fab
           :class="status ? 'btn-on' : 'btn-off'"
-          @click="status = !status"
-          ><v-icon dark> mdi-power-standby </v-icon></v-btn
+          ><v-icon dark>{{status ? 'mdi-lightbulb-on' :'mdi-lightbulb'}} </v-icon></v-btn
         >
-      </v-col>
-    </v-row>
-    <v-row class="warpper-input">
-      <v-col cols="2" class="time">
-        {{ "00:00" }}
-        {{ "00:00" }}
-      </v-col>
-      <v-select :items="items" label="Solo field" solo></v-select>
-      <v-col class="wrapper-btn">
-        <v-btn
-          elevation="2"
-          fab
-          :class="status ? 'btn-on' : 'btn-off'"
-          @click="status = !status"
-          ><v-icon dark> mdi-power-standby </v-icon></v-btn
+      </v-row>
+      <v-row class="warpper-input mt-10" @click="status = !status">
+        <b style="padding: 0px 20px">chanel 4</b>
+        <v-btn elevation="2" fab :class="status ? 'btn-on' : 'btn-off'"
+          ><v-icon dark>{{status ? 'mdi-lightbulb-on' :'mdi-lightbulb'}} </v-icon></v-btn
         >
-      </v-col>
-    </v-row>
-  </div>
+      </v-row>
+    </div>
+  </v-container>
 </template>
 
 <script>
@@ -86,21 +57,24 @@ export default {
   text-align: center;
 
   .warpper-input {
-
-    .time {
-      padding: 0px;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    font-size: 30px;
+    b {
+      margin: 0;
+      color: #fff;
     }
-    .wrapper-btn {
-      padding: 0px 12px;
 
-      .btn-on {
-        color: #fff;
-        background-color: rgba(204, 255, 204, 1) !important;
-      }
+    .btn-on {
+      color: #fff;
+      background-color: rgba(204, 255, 204, 1) !important;
+    }
 
-      .btn-off {
-        color: #000;
-      }
+    .btn-off {
+      color: #000;
+      background-color: rgba(204, 204, 1) !important;
+
     }
   }
 }
