@@ -5,18 +5,22 @@
       <v-form>
         <v-row class="warpper-input">
           <v-select
+            :items="type"
+            item-value="id"
+            item-text="name"
+            v-model="time.type"
+            placeholder="เลือกรูปแบบ"
             solo
-            :items="light"
-            v-model="numberlight"
-            placeholder="หลอดที่"
           ></v-select>
           <v-select
+          v-if="time.type == 1"
             solo
             :items="items"
             v-model="time.day"
             placeholder="วัน"
           ></v-select>
           <v-text-field
+            v-if="time.type == 2"
             v-model="time.date"
             solo
             type="date"
@@ -29,22 +33,15 @@
             placeholder="เวลา HH:MM"
           ></v-text-field>
         </v-row>
-        <v-row
+        <!-- <v-row
           class="warpper-input my-10"
           style="text-align: center; color: #fff"
         >
           <b style="font-size: 30px">{{ time.time }}</b>
           <b style="font-size: 30px">{{ time.date }}</b>
-        </v-row>
+        </v-row> -->
         <v-col class="mt-5 wrapper-btn">
-          <v-btn
-            block
-            large
-            :loading="loading"
-            :disabled="loading"
-            color="primary"
-            to="/setting"
-          >
+          <v-btn block large :disabled="loading" color="primary" to="/setting">
             ยืนยัน
           </v-btn>
         </v-col>
@@ -58,12 +55,12 @@ export default {
   data() {
     return {
       time: {
+        type: null,
         day: null,
         date: "0000/00/00",
         time: "00:00",
       },
       items: [
-        "ทุกวัน",
         "อาทิตย์",
         "จันทร์",
         "อังคาร",
@@ -72,7 +69,10 @@ export default {
         "ศุกร์",
         "เสาร์",
       ],
-      light: ["1", "2", "3", "4"],
+      type: [
+        { id: 1, name: "รายสัปดาห์" },
+        { id: 2, name: "กำหนดเอง" },
+      ],
     };
   },
 };

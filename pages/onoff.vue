@@ -68,7 +68,7 @@ export default {
 
     .btn-on {
       color: #fff;
-      background-color: rgba(204, 255, 204, 1) !important;
+      background-color: rgb(27, 184, 27) !important;
     }
 
     .btn-off {
