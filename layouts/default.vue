@@ -2,8 +2,8 @@
   <v-app>
     <div class="nav">
       <v-container v-if="this.$route.path != '/'">
-        <NuxtLink to="/">
-          <v-icon style="cursor: pointer; color:#fff"> mdi-home </v-icon>
+        <NuxtLink to="/" style="text-decoration: none;">
+          <v-icon style="cursor: pointer; color:#323A5D"> mdi-home-variant-outline </v-icon>
         </NuxtLink>
       </v-container>
     </div>
@@ -31,4 +31,5 @@ export default {
     font-size: 40px;
   }
 }
+
 </style>

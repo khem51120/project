@@ -1,21 +1,20 @@
 <template>
   <div>
     <v-container>
-      <b><h1 class="pt-10 pb-10" style="color: #fff">หน้าแรก</h1></b>
+      <b><h1 class="pt-10 pb-10">หน้าแรก</h1></b>
       <v-row>
         <v-col>
           <div
-            class="background"
+            class="background drop-shadow1"
             style="
-            background-color: #74b72e
+            background-color: #526FFF
               height: 100%;
               align-items: center;
               display: flex;
               justify-content: center;
-              font-size: 75px;
             "
           >
-            <b style="color: #fff">0</b>
+            <p style="color: #fff; font-size: 75px">0</p>
           </div></v-col
         >
         <v-col>
@@ -27,14 +26,6 @@
         </v-col>
       </v-row>
       <v-row>
-        <!-- <v-col>
-          <item-menu
-            icon="mdi-cog-outline"
-            title="ตั้งค่าเปิด - ปิด"
-            to="setting_templatetime"
-          ></item-menu>
-        </v-col> -->
-
         <v-col>
           <item-menu
             icon="mdi-network-strength-4-cog"
@@ -51,7 +42,7 @@
             to="saveunit"
           ></item-menu>
         </v-col>
-        <v-col></v-col>
+        <v-col> </v-col>
       </v-row>
     </v-container>
   </div>

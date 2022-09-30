@@ -1,6 +1,6 @@
 <template>
-  <div class="background" @click="$router.push(`/${to}`)">
-    <v-icon color="black" size="60" class="pb-2">{{ icon }}</v-icon> <br />
+  <div class="background drop-shadow2" @click="$router.push(`/${to}`)">
+    <v-icon style="color: #323A5D" size="60" class="pb-2">{{ icon }}</v-icon> <br />
     <b style="font-size: 18px">{{ title }}</b>
   </div>
 </template>
@@ -20,13 +20,10 @@ export default {
 .background {
   padding: 20px 20px;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 15px;
   cursor: pointer;
   height: 100%;
 
-  b{
-    color: #000000;
-  }
 }
 
 </style>

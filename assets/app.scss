@@ -12,16 +12,37 @@ html {
   margin    : 0;
   padding   : 0;
   overflow-x: hidden;
-  color     : #fff !important;
-  background: #000 !important;
+  color: #323A5D !important;
 
   #app{
-    background-color: rgb(56, 55, 55) !important;
+    background-color: #EFF3F8 !important;
   }
   * {
     font-family   : 'Kanit', sans-serif;
     font-display  : swap;
     letter-spacing: 0.03em;
   }
+}
 
+.v-main{
+  color: #323A5D;
+}
+
+.card{
+  align-items: center;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 15px;
+  justify-content: space-around;
+}
+
+.drop-shadow1{
+  filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.5));
+}
+.drop-shadow2{
+  filter : drop-shadow(0px 0px 5px rgba(0, 0, 0,0.2));
+}
+
+.col{
+  margin: 0px;
 }
