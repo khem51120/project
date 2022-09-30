@@ -8,6 +8,7 @@
         :key="i"
       >
         <b style="padding: 0px 20px">ช่องที่ {{ i + 1 }}</b>
+        <v-switch color="success" v-model="item.status" inset></v-switch>
         <v-btn elevation="2" fab :class="item.status ? 'btn-on' : 'btn-off'"
           ><v-icon dark
             >{{ status ? "mdi-lightbulb-on" : "mdi-lightbulb" }}

@@ -5,18 +5,19 @@
       <v-row>
         <v-col>
           <div
-            class="background drop-shadow1"
+            class="background drop-shadow1 styleblox"
             style="
             background-color: #526FFF
               height: 100%;
+              color: #fff;
               align-items: center;
-              display: flex;
-              justify-content: center;
+            text-align: center;
             "
           >
-            <p style="color: #fff; font-size: 75px">0</p>
-          </div></v-col
-        >
+            <b style=" font-size: 55px">0</b>
+            <b style="font-size: 18px">กำลังเปิด</b>
+          </div>
+        </v-col>
         <v-col>
           <item-menu
             icon="mdi-power-standby"
